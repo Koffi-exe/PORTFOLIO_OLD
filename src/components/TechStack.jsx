@@ -1,11 +1,8 @@
 import React from "react";
-import { FaNodeJs } from "react-icons/fa";
-import { FaHtml5 } from "react-icons/fa";
-import { FaCss3 } from "react-icons/fa";
-import { FaReact } from "react-icons/fa";
-import { DiMongodb } from "react-icons/di";
-import { DiMysql } from "react-icons/di";
-import { animate, motion } from "framer-motion";
+import { FaNodeJs,FaHtml5,FaCss3,FaJava,FaReact  } from "react-icons/fa";
+import { DiMongodb,DiFirebase,DiMysql } from "react-icons/di";
+import { RiTailwindCssFill } from "react-icons/ri";
+import {  motion } from "framer-motion";
 
 const framer = (duration) => ({
   initial: { y: -10 },
@@ -28,10 +25,11 @@ const TechStack = () => {
       </div>
 
       <motion.div
-        initial={{x:-100, opacity:0}}
-        whileInView={{x:0, opacity:1}}
-        transition={{duration:1}}
-      className="flex flex-wrap justify-center gap-5 sm:text-3xl md:text-4xl lg:text-6xl text-4xl">
+        initial={{ x: -100, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="flex flex-wrap justify-center gap-5 sm:text-3xl md:text-4xl lg:text-6xl text-4xl"
+      >
         <motion.div
           variants={framer(1)}
           initial="initial"
@@ -64,11 +62,12 @@ const TechStack = () => {
         >
           <DiMongodb />
         </motion.div>
-        <motion.div 
-         variants={framer(1)}
-         initial="initial"
-         animate="animate"
-        className="border p-3 border-gray-500 text-blue-500 rounded-xl">
+        <motion.div
+          variants={framer(1)}
+          initial="initial"
+          animate="animate"
+          className="border p-3 border-gray-500 text-blue-500 rounded-xl"
+        >
           <DiMysql />
         </motion.div>
         <motion.div
@@ -78,6 +77,30 @@ const TechStack = () => {
           className="border p-3 border-gray-500 text-blue-500 rounded-xl"
         >
           <FaCss3 />
+        </motion.div>
+        <motion.div
+          variants={framer(1)}
+          initial="initial"
+          animate="animate"
+          className="border p-3 border-gray-500 text-blue-500 rounded-xl"
+        >
+          <RiTailwindCssFill />
+        </motion.div>
+        <motion.div
+          variants={framer(1.5)}
+          initial="initial"
+          animate="animate"
+          className="border p-3 border-gray-500 text-orange-500 rounded-xl"
+        >
+          <DiFirebase />
+        </motion.div>
+        <motion.div
+          variants={framer(1)}
+          initial="initial"
+          animate="animate"
+          className="border p-3 border-gray-500  rounded-xl"
+        >
+          <FaJava />
         </motion.div>
       </motion.div>
     </div>
