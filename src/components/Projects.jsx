@@ -22,12 +22,17 @@ const Projects = () => {
                 width={150}
                 height={150}
               />
+              <div className="flex  gap-4 mt-4">
+              <button className="bg-slate-400 text-black font-bold p-2 rounded-xl">CODE</button>
+              <button className="bg-slate-400 text-black font-bold p-2 rounded-xl">LIVE</button>
+              </div>
             </motion.div>
             <motion.div
-            initial={{x:100, opacity:0}}
-            whileInView={{x:0, opacity:1}}
-            transition={{duration:1}}
-            className="w-full  max-w-xl lg:w-3/4">
+              initial={{ x: 100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 1 }}
+              className="w-full  max-w-xl lg:w-3/4"
+            >
               <h5 className="mb-2 font-semibold text-purple-400">
                 {project.title}
               </h5>
