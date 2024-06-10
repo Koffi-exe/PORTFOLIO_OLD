@@ -9,10 +9,10 @@ const Navbar = () => {
     <nav className="w-full py-5 px-6 mb-12 flex justify-between items-center">
       <div className="logo text-slate-500 text-2xl font-black">LOGO</div>
       <div className="links text-slate-500 flex gap-5 text-2xl">
-        <a href="#">{<FaLinkedin />}</a>
-        <a href="#">{<FaGithub />}</a>
-        <a href="#">{<IoIosMailUnread />}</a>
-        <a href="#">{<FaSquareXTwitter />}</a>
+        <a href="https://www.linkedin.com/in/adithya-sasi-5ba33b1aa/">{<FaLinkedin />}</a>
+        <a href="https://github.com/Koffi-exe/">{<FaGithub />}</a>
+        <a href="mailto:adithyaaa@outlook.com">{<IoIosMailUnread />}</a>
+        {/* <a href="#">{<FaSquareXTwitter />}</a> */}
       </div>
     </nav>
   );
