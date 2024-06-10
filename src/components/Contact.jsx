@@ -5,7 +5,7 @@ import { CONTACT } from '../constants'
 const Contact = () => {
   return (
     <div className='my-20'>
-      <h1 className='my-10 text-center text-4xl'>Get in Touch</h1>
+      <h1 className='my-10 text-center text-4xl'>Get in Touch!</h1>
       <motion.div 
       initial={{scale:1}}
       whileHover={{scale:1.5}}
